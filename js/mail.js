@@ -6,7 +6,7 @@ function getIpAddress() {
       .then(response => response.json())
       .then(data => {
         const ipAddress = data.ip;
-        console.log('Prueba II', data.ip)
+        console.log('Su IP es:', data.ip)
         // Procedimiento para asociar la dirección IP con el correo electrónico
         // En este ejemplo, se asume que tienes una función que devuelve el correo electrónico asociado a una dirección IP
         const email = getEmailFromIp(ipAddress);
